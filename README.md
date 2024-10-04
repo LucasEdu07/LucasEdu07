@@ -2,9 +2,7 @@
 
 Passionate about development and its technologies, lover of games, studies and movies (Blade Runner 2077 and The Revenant, my favorite movies) and Software Developer as personal Identity 🤓. 
 
-![Lucas's GitHub stats](https://github-readme-stats.vercel.app/api?username=LucasEdu07&show_icons=true&theme=dark)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LucasEdu07&hide_progress=false&theme=dark)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LucasEdu07&hide_progress=false&theme=dark) ![Lucas's GitHub stats](https://github-readme-stats.vercel.app/api?username=LucasEdu07&show_icons=true&theme=dark)
 
 ## 🛠 Learning Technologies
 <div style="display: inline_block"><br/>
