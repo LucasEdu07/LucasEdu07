@@ -1,4 +1,4 @@
-### Olá! I'm Lucas Eduardo 🙋‍♂️
+### Hi! I'm Lucas Eduardo 🙋‍♂️
 
 Passionate about development and its technologies, lover of games, studies and movies (Blade Runner 2077 and The Revenant, my favorite movies) and Software Developer as personal Identity 🤓. 
 
