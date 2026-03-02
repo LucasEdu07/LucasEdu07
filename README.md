@@ -1,38 +1,61 @@
 <h1 align="center">Lucas Eduardo</h1>
 <p align="center">
-  <strong>Software Developer | Focused on Backend Engineering & Systems Architecture</strong>
+  <strong>Software Engineer | System Architecture | Backend & End-to-End Systems</strong>
 </p>
 
 ---
 
 ## 👨‍💻 About Me
 
-I am a software developer passionate about building robust and scalable solutions. With a strong interest in clean architecture, backend technologies, and systems design, I continuously seek to improve my skills and deliver high-quality code.
+I am a Software Engineer focused on building end-to-end systems that connect domain modeling, backend services, integrations and application layers into cohesive, scalable solutions.
 
-- 📍 Based in Brazil
-- 📌 Currently focused on C#, .NET, and system-level integrations
-- 🎯 Interested in software craftsmanship, DevOps practices, and automotive technology
+My work goes beyond writing functional code — I aim to design systems that are structured, maintainable and technically consistent over time. I am particularly interested in system architecture, API design, clean layering principles and real-world integrations.
+
+Currently working with C#, .NET and system-level integrations, while continuously expanding my expertise in backend engineering, platform design and software architecture.
+
+- 📍 Based in Brazil  
+- 🏗 Focused on Backend Engineering & System Architecture  
+- 🔧 Experienced with integrations, APIs and domain-driven structures  
+- 🚀 Always improving design clarity, performance and long-term maintainability  
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Core Technologies
 
 <div style="display: inline_block"><br/>
   <img align="center" alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
   <img align="center" alt="C#" src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white"/>
+  <img align="center" alt="SQL Server" src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
   <img align="center" alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
   <img align="center" alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img align="center" alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 </div><br/>
 
 ---
 
-## 📈 GitHub Overview
+## 🧠 Engineering Focus
 
-<div align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=LucasEdu07&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LucasEdu07&layout=compact&langs_count=8&theme=dark"/>
-</div>
+- Clean Architecture & Layered Systems  
+- API Design & Backend Services  
+- System Integrations & Domain Modeling  
+- Maintainable and Evolvable Codebases  
+- Performance & Structural Clarity  
+
+---
+
+## 🚀 Selected Work & Technical Interests
+
+- Design and implementation of layered systems applying Clean Architecture principles  
+- Backend development with structured domain modeling and API-driven communication  
+- System-level integrations and data processing  
+- Continuous improvement of system maintainability and architectural clarity  
+
+---
+
+## 📊 GitHub Activity
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=LucasEdu07&theme=dark&hide_border=true"/>
+</p>
 
 ---
 
