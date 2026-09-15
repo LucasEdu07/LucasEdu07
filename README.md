@@ -1,64 +1,92 @@
-<h1 align="center">Lucas Eduardo</h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img alt="Lucas Eduardo — Software Engineer, Applied AI & Platform" src="assets/banner-light.svg" width="100%">
+</picture>
+
 <p align="center">
-  <strong>Software Engineer | System Architecture | Backend & End-to-End Systems</strong>
+  <a href="https://www.linkedin.com/in/lucas-souza-a67a52165/">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white">
+  </a>
+  <img alt="Brazil" src="https://img.shields.io/badge/Brazil-0B1220?style=flat-square&logo=googlemaps&logoColor=E0A63C">
+  <img alt="Applied AI" src="https://img.shields.io/badge/Applied_AI-0B1220?style=flat-square&logo=probot&logoColor=E0A63C">
+  <img alt="Platform Engineering" src="https://img.shields.io/badge/Platform_Engineering-0B1220?style=flat-square&logo=githubactions&logoColor=E0A63C">
 </p>
 
 ---
 
-## 👨‍💻 About Me
+I build AI systems that do real work — and the platform underneath that keeps them honest.
 
-I am a Software Engineer focused on building end-to-end systems that connect domain modeling, backend services, integrations and application layers into cohesive, scalable solutions.
+Most of what I ship lives in private repositories. Here's the shape of it.
 
-My work goes beyond writing functional code — I aim to design systems that are structured, maintainable and technically consistent over time. I am particularly interested in system architecture, API design, clean layering principles and real-world integrations.
+## Applied AI
 
-Currently working with C#, .NET and system-level integrations, while continuously expanding my expertise in backend engineering, platform design and software architecture.
+**Multi-agent orchestration.** A coordinator that runs several CLI agents in parallel: each one isolated in its own workspace, so closing one never destroys another's work. Session-scoped tokens stop one agent from forging commands as another, and the command surface is an allowlist — read verbs by default, writes by exception. Approval travels back to the coordinator inside the same turn, not on the next poll.
 
-- 📍 Based in Brazil  
-- 🏗 Focused on Backend Engineering & System Architecture  
-- 🔧 Experienced with integrations, APIs and domain-driven structures  
-- 🚀 Always improving design clarity, performance and long-term maintainability  
+**Cost engineering for LLMs.** Model tiering per task, measured instead of assumed. Cheap models do the mechanical work; the expensive tier is reserved for adversarial verification, where it actually pays. An audit of real usage found most of the spend hiding in orchestration that nobody had instrumented.
 
----
+**AI-assisted code quality.** A quality gate that reads SARIF, grades A–E and decorates the pull request — no SonarQube server to run. Named after ἔλεγχος: the examination that proves a claim by trying to refute it.
 
-## 🧰 Core Technologies
+**On-device inference.** Face recognition on Android, with the model pulled out of the APK and downloaded on demand — 23 MB lighter, and the app handles the model simply not being there.
 
-<div style="display: inline_block"><br/>
-  <img align="center" alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
-  <img align="center" alt="C#" src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white"/>
-  <img align="center" alt="SQL Server" src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
-  <img align="center" alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
-  <img align="center" alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-</div><br/>
+**Memory and context engineering.** Persistent memory across sessions, linked as a graph rather than a flat log, so a decision made weeks ago is still reachable when it matters.
 
----
+## Engineering
 
-## 🧠 Engineering Focus
+**Native Android** — Kotlin, Jetpack Compose. Offline-first: the places these apps run have bad signal and the phone is the only interface.
 
-- Clean Architecture & Layered Systems  
-- API Design & Backend Services  
-- System Integrations & Domain Modeling  
-- Maintainable and Evolvable Codebases  
-- Performance & Structural Clarity  
+**Web platforms** — TypeScript over Postgres. Multi-tenant, role-based access, audit trails that survive the question *who changed this, and when*.
 
----
+**Services and integrations** — C#/.NET and Python. Third-party APIs, background processing, ETL, and the unglamorous work of making two systems that were never meant to talk agree on a contract.
 
-## 🚀 Selected Work & Technical Interests
+**Developer platform** — reusable CI shared across repositories, dependency automation, and a runtime migration of 25+ actions completed ahead of the deprecation deadline rather than after it.
 
-- Design and implementation of layered systems applying Clean Architecture principles  
-- Backend development with structured domain modeling and API-driven communication  
-- System-level integrations and data processing  
-- Continuous improvement of system maintainability and architectural clarity  
+## How I work
 
----
+Merging to `main` does not deploy. A person approves the release and the approval is recorded with the run — fail-closed, because a pipeline that ships on green alone will eventually ship on a green that lied.
 
-## 📊 GitHub Activity
+Every pull request links to a task, and a required check blocks the merge when it doesn't. A gate beats discipline.
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=LucasEdu07&theme=dark&hide_border=true"/>
+I verify before I assert. A blocked port, a full disk, a service that's down — if I haven't tested it today, it isn't a fact, it's a memory.
+
+## Stack
+
+<p>
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white">
+  <img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white">
+  <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
+</p>
+<p>
+  <img alt="Anthropic Claude" src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white">
+  <img alt="Model Context Protocol" src="https://img.shields.io/badge/MCP-0B1220?style=flat-square&logo=modelcontextprotocol&logoColor=E0A63C">
+  <img alt="n8n" src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white">
+  <img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">
+  <img alt="Jetpack Compose" src="https://img.shields.io/badge/Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white">
+  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white">
+</p>
+<p>
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+  <img alt="SQL Server" src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white">
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
+  <img alt="GitHub Actions" src="https://img.shields.io/badge/Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
+  <img alt="Linux" src="https://img.shields.io/badge/Linux-0B1220?style=flat-square&logo=linux&logoColor=E0A63C">
 </p>
 
+## Open work
+
+**[friday_agents](https://github.com/LucasEdu07/friday_agents)** — local agent framework in Python: persistent memory, image analysis, API integration. Modular and offline-ready. It's where the ideas above started.
+
+The other public repositories are earlier ground — CRM, inventory, an OBD-II reader for car diagnostics. They stay public on purpose; the trajectory is part of the work.
+
 ---
 
-## 📫 Connect with Me
+<p align="center">
+  <img height="165" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=LucasEdu07&show_icons=true&hide_border=true&bg_color=00000000&title_color=E0A63C&text_color=8FA3BC&icon_color=E0A63C&hide=issues&rank_icon=github">
+  <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LucasEdu07&layout=compact&hide_border=true&bg_color=00000000&title_color=E0A63C&text_color=8FA3BC&langs_count=8">
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-souza-a67a52165/)
+<p align="center">
+  <img alt="Contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=LucasEdu07&bg_color=00000000&color=8FA3BC&line=E0A63C&point=E9EFF7&area=true&hide_border=true">
+</p>
