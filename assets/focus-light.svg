@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 272" width="860" height="272" role="img" aria-label="Currently building: multi-agent orchestration, quality gates, on-device AI">
+  <defs>
+    <linearGradient id="fbgl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFCFD"/>
+      <stop offset="100%" stop-color="#EDF1F5"/>
+    </linearGradient>
+    <clipPath id="fclipl"><rect width="860" height="272" rx="10"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#fclipl)">
+    <rect width="860" height="272" fill="url(#fbgl)"/>
+    <rect width="860" height="272" rx="10" fill="none" stroke="#D4DCE5" stroke-width="2"/>
+
+    <g font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+      <text x="32" y="44" fill="#9A6E14" font-size="13" font-weight="700" letter-spacing="2.2">CURRENTLY BUILDING</text>
+      <line x1="32" y1="62" x2="828" y2="62" stroke="#D4DCE5" stroke-width="1"/>
+
+      <!-- coluna 1: orquestracao multi-agente -->
+      <g transform="translate(32 92)">
+        <g stroke="#9A6E14" stroke-width="1.6" fill="none">
+          <circle cx="13" cy="9" r="5"/>
+          <circle cx="3"  cy="30" r="4"/>
+          <circle cx="23" cy="30" r="4"/>
+          <path d="M11 14 L5 26 M15 14 L21 26"/>
+        </g>
+        <text x="0" y="66" fill="#12181F" font-size="16" font-weight="650">Multi-agent</text>
+        <text x="0" y="87" fill="#12181F" font-size="16" font-weight="650">orchestration</text>
+        <text x="0" y="112" fill="#5A6B7D" font-size="12.5">Isolated workspaces,</text>
+        <text x="0" y="129" fill="#5A6B7D" font-size="12.5">session-scoped tokens,</text>
+        <text x="0" y="146" fill="#5A6B7D" font-size="12.5">allowlisted commands.</text>
+      </g>
+
+      <line x1="298" y1="84" x2="298" y2="240" stroke="#D4DCE5" stroke-width="1"/>
+
+      <!-- coluna 2: portoes de qualidade -->
+      <g transform="translate(330 92)">
+        <g stroke="#9A6E14" stroke-width="1.6" fill="none">
+          <rect x="1" y="6" width="24" height="26" rx="3"/>
+          <path d="M7 19 l5 5 l9 -11"/>
+        </g>
+        <text x="0" y="66" fill="#12181F" font-size="16" font-weight="650">Quality gates</text>
+        <text x="0" y="87" fill="#12181F" font-size="16" font-weight="650">that bite</text>
+        <text x="0" y="112" fill="#5A6B7D" font-size="12.5">SARIF-driven grading,</text>
+        <text x="0" y="129" fill="#5A6B7D" font-size="12.5">linked-task enforcement,</text>
+        <text x="0" y="146" fill="#5A6B7D" font-size="12.5">human-approved releases.</text>
+      </g>
+
+      <line x1="596" y1="84" x2="596" y2="240" stroke="#D4DCE5" stroke-width="1"/>
+
+      <!-- coluna 3: IA no device -->
+      <g transform="translate(628 92)">
+        <g stroke="#9A6E14" stroke-width="1.6" fill="none">
+          <rect x="4" y="4" width="18" height="28" rx="3"/>
+          <circle cx="13" cy="15" r="4.5"/>
+          <path d="M8 26 q5 -5 10 0"/>
+        </g>
+        <text x="0" y="66" fill="#12181F" font-size="16" font-weight="650">On-device</text>
+        <text x="0" y="87" fill="#12181F" font-size="16" font-weight="650">inference</text>
+        <text x="0" y="112" fill="#5A6B7D" font-size="12.5">Models out of the bundle,</text>
+        <text x="0" y="129" fill="#5A6B7D" font-size="12.5">fetched on demand,</text>
+        <text x="0" y="146" fill="#5A6B7D" font-size="12.5">absence handled.</text>
+      </g>
+    </g>
+  </g>
+</svg>

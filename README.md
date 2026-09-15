@@ -83,10 +83,13 @@ The other public repositories are earlier ground — CRM, inventory, an OBD-II r
 ---
 
 <p align="center">
-  <img height="165" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=LucasEdu07&show_icons=true&hide_border=true&bg_color=00000000&title_color=E0A63C&text_color=8FA3BC&icon_color=E0A63C&hide=issues&rank_icon=github">
-  <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LucasEdu07&layout=compact&hide_border=true&bg_color=00000000&title_color=E0A63C&text_color=8FA3BC&langs_count=8">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/focus-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/focus-light.svg">
+    <img alt="Currently building: multi-agent orchestration, quality gates, on-device inference" src="assets/focus-light.svg" width="860">
+  </picture>
 </p>
 
 <p align="center">
-  <img alt="Contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=LucasEdu07&bg_color=00000000&color=8FA3BC&line=E0A63C&point=E9EFF7&area=true&hide_border=true">
+  <img height="170" alt="Contribution streak" src="https://streak-stats.demolab.com?user=LucasEdu07&hide_border=true&background=00000000&ring=E0A63C&fire=E0A63C&currStreakLabel=E0A63C&sideLabels=8FA3BC&dates=6F8399&stroke=1E2B3E&sideNums=8FA3BC&currStreakNum=E0A63C">
 </p>
