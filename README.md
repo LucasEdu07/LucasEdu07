@@ -15,29 +15,33 @@
 
 ---
 
-I build AI systems and the infrastructure that runs them. Most of my work is in private repositories. Here's what I do.
+Agents that coordinate other agents, quality gates that fail the build, face recognition running on the phone instead of a server.
+
+Most of it is in private repositories, so here's the work rather than the repos.
 
 ## AI
 
 **Multi-agent orchestration** — a coordinator that runs several AI agents at the same time. Each agent works in its own isolated folder, so closing one never deletes another's work. Tokens are scoped per session, which stops one agent from running commands as another.
 
-**LLM cost control** — each task goes to the cheapest model that can handle it, and the expensive ones only where they change the result. An audit of real usage found most of the spend was in orchestration nobody had measured.
+**LLM cost control** — an audit of real usage found 98% of the model spend on the most expensive tier, and 92% of that inside orchestration nobody had instrumented. Every stage now declares which tier it runs on, and the expensive one is kept for the checks where a wrong answer costs more than the call.
 
 **Code quality gate** — reads SARIF output from static analysis, grades the code A–E and comments on the pull request. No SonarQube server to maintain.
 
 **On-device inference** — face recognition on Android. I moved the model out of the app bundle and download it on demand. The app is 23 MB smaller and still works before the model arrives.
 
-**Persistent memory** — context that survives between sessions, stored as a linked graph instead of a flat log, so older decisions stay findable.
+**Persistent memory** — context that survives between sessions, stored as a linked graph. A decision made six weeks ago is still reachable when the same question comes back, instead of being made again from scratch.
 
 ## Engineering
 
-**Android** — Kotlin and Jetpack Compose. Built for bad networks, because these apps run where the signal drops and the phone is the only device available.
+The systems the AI work sits on top of. Multi-tenant web platforms in TypeScript and Postgres, where several companies share one deployment and every change is attributable. C# and Python services moving data between APIs that were never designed to meet. Android apps in Kotlin and Compose, built for warehouses and job sites where the network drops mid-request and the phone is the only device anyone has.
 
-**Web platforms** — TypeScript and Postgres. Multiple companies on one system, permissions by role, and a log of who changed what.
+The platform work came out of that: CI shared across repositories, dependency updates that merge themselves when green, and a runtime migration of 25+ actions finished before the deadline rather than after it.
 
-**Services and integrations** — C#/.NET and Python. Third-party APIs, background jobs, ETL, and making systems that were never designed to talk to each other exchange data.
+## What I don't build
 
-**Developer platform** — shared CI across repositories, automated dependency updates, and a runtime migration of 25+ actions finished before the deadline.
+The interesting part is rarely the part you build. Queues, roles, canned replies, dashboards — that already exists under a permissive license, and rebuilding it costs weeks nobody has.
+
+I'd rather spend those weeks on the piece nobody can sell you: the one wired to data only that company has.
 
 ## How I work
 
