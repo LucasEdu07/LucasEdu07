@@ -15,39 +15,37 @@
 
 ---
 
-I build AI systems that do real work — and the platform underneath that keeps them honest.
+I build AI systems and the infrastructure that runs them. Most of my work is in private repositories. Here's what I do.
 
-Most of what I ship lives in private repositories. Here's the shape of it.
+## AI
 
-## Applied AI
+**Multi-agent orchestration** — a coordinator that runs several AI agents at the same time. Each agent works in its own isolated folder, so closing one never deletes another's work. Tokens are scoped per session, which stops one agent from running commands as another.
 
-**Multi-agent orchestration.** A coordinator that runs several CLI agents in parallel: each one isolated in its own workspace, so closing one never destroys another's work. Session-scoped tokens stop one agent from forging commands as another, and the command surface is an allowlist — read verbs by default, writes by exception. Approval travels back to the coordinator inside the same turn, not on the next poll.
+**LLM cost control** — each task goes to the cheapest model that can handle it, and the expensive ones only where they change the result. An audit of real usage found most of the spend was in orchestration nobody had measured.
 
-**Cost engineering for LLMs.** Model tiering per task, measured instead of assumed. Cheap models do the mechanical work; the expensive tier is reserved for adversarial verification, where it actually pays. An audit of real usage found most of the spend hiding in orchestration that nobody had instrumented.
+**Code quality gate** — reads SARIF output from static analysis, grades the code A–E and comments on the pull request. No SonarQube server to maintain.
 
-**AI-assisted code quality.** A quality gate that reads SARIF, grades A–E and decorates the pull request — no SonarQube server to run. Named after ἔλεγχος: the examination that proves a claim by trying to refute it.
+**On-device inference** — face recognition on Android. I moved the model out of the app bundle and download it on demand. The app is 23 MB smaller and still works before the model arrives.
 
-**On-device inference.** Face recognition on Android, with the model pulled out of the APK and downloaded on demand — 23 MB lighter, and the app handles the model simply not being there.
-
-**Memory and context engineering.** Persistent memory across sessions, linked as a graph rather than a flat log, so a decision made weeks ago is still reachable when it matters.
+**Persistent memory** — context that survives between sessions, stored as a linked graph instead of a flat log, so older decisions stay findable.
 
 ## Engineering
 
-**Native Android** — Kotlin, Jetpack Compose. Offline-first: the places these apps run have bad signal and the phone is the only interface.
+**Android** — Kotlin and Jetpack Compose. Built for bad networks, because these apps run where the signal drops and the phone is the only device available.
 
-**Web platforms** — TypeScript over Postgres. Multi-tenant, role-based access, audit trails that survive the question *who changed this, and when*.
+**Web platforms** — TypeScript and Postgres. Multiple companies on one system, permissions by role, and a log of who changed what.
 
-**Services and integrations** — C#/.NET and Python. Third-party APIs, background processing, ETL, and the unglamorous work of making two systems that were never meant to talk agree on a contract.
+**Services and integrations** — C#/.NET and Python. Third-party APIs, background jobs, ETL, and making systems that were never designed to talk to each other exchange data.
 
-**Developer platform** — reusable CI shared across repositories, dependency automation, and a runtime migration of 25+ actions completed ahead of the deprecation deadline rather than after it.
+**Developer platform** — shared CI across repositories, automated dependency updates, and a runtime migration of 25+ actions finished before the deadline.
 
 ## How I work
 
-Merging to `main` does not deploy. A person approves the release and the approval is recorded with the run — fail-closed, because a pipeline that ships on green alone will eventually ship on a green that lied.
+Merging to `main` doesn't deploy. A person approves each release, and the approval is recorded with the run.
 
-Every pull request links to a task, and a required check blocks the merge when it doesn't. A gate beats discipline.
+Every pull request links to a task. A required check blocks the merge when it doesn't.
 
-I verify before I assert. A blocked port, a full disk, a service that's down — if I haven't tested it today, it isn't a fact, it's a memory.
+Before I report that something is broken, I test it again. More than once the problem had already been fixed and nobody had rechecked.
 
 ## Stack
 
@@ -59,8 +57,8 @@ I verify before I assert. A blocked port, a full disk, a service that's down —
   <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
 </p>
 <p>
-  <img alt="Anthropic Claude" src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white">
-  <img alt="Model Context Protocol" src="https://img.shields.io/badge/MCP-0B1220?style=flat-square&logo=modelcontextprotocol&logoColor=E0A63C">
+  <img alt="Claude" src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white">
+  <img alt="MCP" src="https://img.shields.io/badge/MCP-0B1220?style=flat-square&logo=modelcontextprotocol&logoColor=E0A63C">
   <img alt="n8n" src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white">
   <img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">
   <img alt="Jetpack Compose" src="https://img.shields.io/badge/Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white">
@@ -74,19 +72,13 @@ I verify before I assert. A blocked port, a full disk, a service that's down —
   <img alt="Linux" src="https://img.shields.io/badge/Linux-0B1220?style=flat-square&logo=linux&logoColor=E0A63C">
 </p>
 
-## Open work
-
-**[friday_agents](https://github.com/LucasEdu07/friday_agents)** — local agent framework in Python: persistent memory, image analysis, API integration. Modular and offline-ready. It's where the ideas above started.
-
-The other public repositories are earlier ground — CRM, inventory, an OBD-II reader for car diagnostics. They stay public on purpose; the trajectory is part of the work.
-
 ---
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/focus-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/focus-light.svg">
-    <img alt="Currently building: multi-agent orchestration, quality gates, on-device inference" src="assets/focus-light.svg" width="860">
+    <img alt="Currently building: multi-agent orchestration, code quality gate, on-device inference" src="assets/focus-light.svg" width="860">
   </picture>
 </p>
 

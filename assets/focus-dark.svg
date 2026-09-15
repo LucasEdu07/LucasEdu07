@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 272" width="860" height="272" role="img" aria-label="Currently building: multi-agent orchestration, quality gates, on-device AI">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 272" width="860" height="272" role="img" aria-label="Currently building: multi-agent orchestration, code quality gate, on-device inference">
   <defs>
     <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0B1220"/>
@@ -25,9 +25,9 @@
         </g>
         <text x="0" y="66" fill="#E9EFF7" font-size="16" font-weight="650">Multi-agent</text>
         <text x="0" y="87" fill="#E9EFF7" font-size="16" font-weight="650">orchestration</text>
-        <text x="0" y="112" fill="#7D8FA6" font-size="12.5">Isolated workspaces,</text>
-        <text x="0" y="129" fill="#7D8FA6" font-size="12.5">session-scoped tokens,</text>
-        <text x="0" y="146" fill="#7D8FA6" font-size="12.5">allowlisted commands.</text>
+        <text x="0" y="112" fill="#7D8FA6" font-size="12.5">Agents run in parallel,</text>
+        <text x="0" y="129" fill="#7D8FA6" font-size="12.5">each in its own folder,</text>
+        <text x="0" y="146" fill="#7D8FA6" font-size="12.5">with scoped tokens.</text>
       </g>
 
       <line x1="298" y1="84" x2="298" y2="240" stroke="#1E2B3E" stroke-width="1"/>
@@ -38,11 +38,11 @@
           <rect x="1" y="6" width="24" height="26" rx="3"/>
           <path d="M7 19 l5 5 l9 -11"/>
         </g>
-        <text x="0" y="66" fill="#E9EFF7" font-size="16" font-weight="650">Quality gates</text>
-        <text x="0" y="87" fill="#E9EFF7" font-size="16" font-weight="650">that bite</text>
-        <text x="0" y="112" fill="#7D8FA6" font-size="12.5">SARIF-driven grading,</text>
-        <text x="0" y="129" fill="#7D8FA6" font-size="12.5">linked-task enforcement,</text>
-        <text x="0" y="146" fill="#7D8FA6" font-size="12.5">human-approved releases.</text>
+        <text x="0" y="66" fill="#E9EFF7" font-size="16" font-weight="650">Code quality</text>
+        <text x="0" y="87" fill="#E9EFF7" font-size="16" font-weight="650">gate</text>
+        <text x="0" y="112" fill="#7D8FA6" font-size="12.5">Reads SARIF, grades A-E</text>
+        <text x="0" y="129" fill="#7D8FA6" font-size="12.5">and comments on the PR.</text>
+        <text x="0" y="146" fill="#7D8FA6" font-size="12.5">No server to maintain.</text>
       </g>
 
       <line x1="596" y1="84" x2="596" y2="240" stroke="#1E2B3E" stroke-width="1"/>
@@ -56,9 +56,9 @@
         </g>
         <text x="0" y="66" fill="#E9EFF7" font-size="16" font-weight="650">On-device</text>
         <text x="0" y="87" fill="#E9EFF7" font-size="16" font-weight="650">inference</text>
-        <text x="0" y="112" fill="#7D8FA6" font-size="12.5">Models out of the bundle,</text>
-        <text x="0" y="129" fill="#7D8FA6" font-size="12.5">fetched on demand,</text>
-        <text x="0" y="146" fill="#7D8FA6" font-size="12.5">absence handled.</text>
+        <text x="0" y="112" fill="#7D8FA6" font-size="12.5">Face recognition on</text>
+        <text x="0" y="129" fill="#7D8FA6" font-size="12.5">Android. Model loads on</text>
+        <text x="0" y="146" fill="#7D8FA6" font-size="12.5">demand, 23 MB smaller.</text>
       </g>
     </g>
   </g>
