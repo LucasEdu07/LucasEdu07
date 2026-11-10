@@ -12,11 +12,24 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
+      - uses: actions/checkout@v4
+
       - name: Generate the Pac-Man SVGs
         uses: abozanona/pacman-contribution-graph@v5.0.0
         with:
           github_user_name: ${{ github.repository_owner }}
           games: 'pacman'
+
+      - name: Wrap them in the arcade frame
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PLAYER: ${{ github.repository_owner }}
+        run: |
+          SCORE=$(gh api graphql -f query='query($u:String!){user(login:$u){contributionsCollection{contributionCalendar{totalContributions}}}}' -F u="$PLAYER" --jq '.data.user.contributionsCollection.contributionCalendar.totalContributions')
+          for t in dark light; do
+            f=dist/pacman-contribution-graph.svg; [ "$t" = dark ] && f=dist/pacman-contribution-graph-dark.svg
+            node .github/scripts/arcade-frame.mjs "$f" "$f.tmp" "$t" "$PLAYER" "$SCORE" && mv "$f.tmp" "$f"
+          done
 
       - name: Push the SVGs to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
