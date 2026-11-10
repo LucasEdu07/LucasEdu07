@@ -25,6 +25,10 @@
 
 ### Activity
 
-<img src="https://streak-stats.demolab.com?user=LucasEdu07&hide_border=true&background=00000000&ring=E0A63C&fire=E0A63C&currStreakLabel=E0A63C&sideLabels=8FA3BC&dates=6F8399&stroke=1E2B3E&sideNums=8FA3BC&currStreakNum=E0A63C" height="160" alt="GitHub streak">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LucasEdu07/LucasEdu07/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LucasEdu07/LucasEdu07/output/pacman-contribution-graph.svg">
+  <img alt="Pac-Man eating my contribution graph" src="https://raw.githubusercontent.com/LucasEdu07/LucasEdu07/output/pacman-contribution-graph.svg">
+</picture>
 
 Most of my work lives in private repos, so the graph tells more than the repo list.
