@@ -3,6 +3,7 @@
 **AI Engineer** at Fenox Tecnologia · 📍 São José dos Campos, Brazil
 
 <a href="https://www.linkedin.com/in/lucas-souza-a67a52165/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://lucasedu07.github.io"><img src="https://img.shields.io/badge/Portfolio-111827?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
 
 ### What I do
 
